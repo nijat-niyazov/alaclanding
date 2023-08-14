@@ -11,6 +11,9 @@
   background-image: url("../assets/bg.png");
   background-size: cover;
 }
+.custom-style2 {
+  background: linear-gradient(90deg, rgba(0, 215, 189, 0.16) 0%, rgba(48, 227, 206, 0.16) 0.01%, rgba(104, 170, 255, 0.16) 50.52%, rgba(222, 129, 255, 0.16) 100%); 
+}
 
 @media (max-width: 600px) {
   .custom-style {
@@ -24,12 +27,15 @@
   --background-end-rgb: #172d66;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: #172d66;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+.bgiphone {
+ background: url("../assets/iphone.png");
+  background-size: cover;  
 }
-
-
