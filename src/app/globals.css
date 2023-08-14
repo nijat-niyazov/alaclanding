@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-style {
+  background-image: url("../assets/bg.png");
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .custom-style {
+    background-image: url("../assets/bg_m.png");
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
