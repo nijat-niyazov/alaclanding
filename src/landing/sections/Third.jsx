@@ -22,7 +22,7 @@ function Third() {
   ];
 
   return (
-    <section className="bgsection3 z-0 py-16  max-w-full relative md:flex md:items-center md:justify-center w-full md:h-[750px]">
+    <section className="bgsection3 z-0 py-16 bg-white  max-w-full relative md:flex md:items-center md:justify-center w-full md:h-[750px]">
       <div className="z-10  bg-transparent px-4 flex justify-center flex-col  items-center gap-8 text-center">
         <p className="text-[24px] font-bold leading-[28.8px] text-[#172D66]">
           Find out more than 20 clinics of Baku with top rated doctors

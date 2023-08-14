@@ -8,7 +8,7 @@ const Footer = () => {
         {/* first */}
         <div className="mb-10 md:m-0">
           <Image src={logo} alt="logo" className="mb-6" />
-          <p className="text-primary_blue mb-4  font-[500] text-[16px] md:text-2xl">
+          <p className="text-primary_blue mb-4  font-[500] text-[16px]  tracking-[0.32px]">
             Alac is the world’s leading <br /> community for creatives to share,
             <br /> grow, and get hired.
           </p>
@@ -35,19 +35,19 @@ const Footer = () => {
                 @info.alac.az
               </span>
             </div>
-            <div className="px-6 py-4 bg-[#F0F3FF] rounded-[32px] flex items-center justify-center ">
+            <div className="px-4 py-4 bg-[#F0F3FF] rounded-[32px] flex items-center justify-center ">
               <Image width={16} src={facebook} alt="avatar" />
             </div>
-            <div className="px-6 py-4 bg-[#F0F3FF] rounded-[32px] flex items-center justify-center ">
+            <div className="px-4 py-4 bg-[#F0F3FF] rounded-[32px] flex items-center justify-center ">
               <Image width={16} src={instagram} alt="avatar" />
             </div>
-            <div className="px-6 py-4 bg-[#F0F3FF] rounded-[32px] hidden md:flex items-center justify-center ">
+            <div className="px-4 py-4 bg-[#F0F3FF] rounded-[32px] hidden md:flex items-center justify-center ">
               <Image width={16} src={youtube} alt="avatar" />
             </div>
           </section>
 
           <section className="flex md:hidden gap-2 items-center">
-            <div className="px-6 py-4 bg-[#F0F3FF] rounded-[32px] flex items-center justify-center ">
+            <div className="px-4 py-4 bg-[#F0F3FF] rounded-[32px] flex items-center justify-center ">
               <Image width={16} src={youtube} alt="avatar" className="p" />
             </div>
           </section>

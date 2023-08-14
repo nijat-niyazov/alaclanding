@@ -7,3 +7,29 @@
     background-size:cover;
     background-position: center;
 }
+.custom-style {
+  background-image: url("../assets/bg.png");
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .custom-style {
+    background-image: url("../assets/bg_m.png");
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: #172d66;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: #172d66;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
