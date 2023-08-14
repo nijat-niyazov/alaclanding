@@ -8,6 +8,7 @@ import { Link } from "react-scroll";
 
 const First = () => {
   let [isOpen, setIsOpen] = useState(false);
+
   function closeModal() {
     setIsOpen(false);
   }
@@ -15,13 +16,18 @@ const First = () => {
   function openModal() {
     setIsOpen(true);
   }
+
   return (
     <div className="relative w-full custom-style h-screen   pb-1.5">
       <div className="md:pt-8 z-10 p-4 md:p-0 md:w-[80%]   mx-auto">
         <header className="flex  items-center justify-between ">
           <Image src={logo} alt="logo" width={84} height={32} />
           {/* menubar */}
-          <button onClick={() => setIsOpen(true)}>
+          <button
+            onClick={() => {
+              setIsOpen(isOpen ? false : true);
+            }}
+          >
             <Image
               src={!isOpen ? menu : close}
               className="md:hidden"
