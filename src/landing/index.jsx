@@ -1,5 +1,5 @@
+import { Fifth, First, Fourth, Second, Third } from "@/landing/sections";
 import Footer from "./Footer";
-import { First, Second, Fifth, Fourth, Third } from "@/landing/sections";
 
 const Landing = () => {
   return (

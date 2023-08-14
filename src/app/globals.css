@@ -3,10 +3,14 @@
 @tailwind utilities;
 
 .bgsection3 {
-    background-image:url("../assets/clinicsbg.png");
-    background-size:cover;
-    background-position: center;
+  background-image: url("../assets/clinicsbg.png");
+  background-size: cover;
+  background-position: center;
+  width: 800px;
+  height: 800px;
+  margin: auto;
 }
+
 .custom-style {
   background-image: url("../assets/bg.png");
   background-size: cover;
@@ -15,6 +19,33 @@
 @media (max-width: 600px) {
   .custom-style {
     background-image: url("../assets/bg_m.png");
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Mobil versiyon için 2 sütun */
+  gap: 20px; /* Aralardaki boşluk */
+}
+.grid-item:nth-child(1) {
+  grid-column: span 2;
+}
+
+@media (min-width: 768px) {
+  /* Masaüstü versiyonunda stil değişiklikleri */
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* Masaüstü versiyon için 3 sütun */
+  }
+
+  /* İlk iki kartı özelleştirme (3'er sütun span) */
+  .grid-item:nth-child(1),
+  .grid-item:nth-child(2) {
+    grid-column: span 3;
+  }
+
+  /* Diğer kartları özelleştirme (2'şer sütun span) */
+  .grid-item:not(:nth-child(1)):not(:nth-child(2)) {
+    grid-column: span 2;
   }
 }
 
@@ -31,5 +62,3 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
-

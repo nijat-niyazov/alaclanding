@@ -1,4 +1,3 @@
-import React from "react";
 import { clinic1, clinic2, clinic3, clinic4 } from "@/assets";
 import Image from "next/image";
 function Third() {
@@ -58,7 +57,7 @@ function Third() {
             className="w-[64px] h-[64px] rounded-[16px] object-cover"
           />
           <p className="text-base text-[#172D66]">
-            Find out more than 20 clinicsof Baku with top rated doctors
+            Find out more than 20 clinics of Baku with top rated doctors
           </p>
         </div>
       </div>

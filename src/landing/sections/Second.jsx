@@ -7,21 +7,21 @@ function Card({ heading, text, image, bg, mobCols = 1, desCols = 2 }) {
     <div
       style={{
         backgroundColor: bg,
-        gridColumn: `span ${desCols}`,
+        // gridColumn: `span ${desCols}`,
 
-        "@media (max-width: 600px)": {
-          gridColumn: `span ${mobCols}`,
-        },
+        // "@media (max-width: 600px)": {
+        //   gridColumn: `span ${mobCols}`,
+        // },
       }}
-      className="rounded-[40px] md:rounded-[200px] md:pl-[72px]  overflow-hidden relative flex flex-col md:flex-row gap-4 items-center justify-between"
+      className="grid-item rounded-[40px] md:rounded-[200px] md:pl-[72px]  overflow-hidden relative flex flex-col md:flex-row gap-4 items-center justify-between"
     >
       <div className="p-6 pb-2 md:px-0 md:py-12 ">
         <h3 className="mb-2 font-bold text-xl md:text-2xl">{heading}</h3>
         <p className="text-[14px] md:text-[16px]">{text}</p>
       </div>
 
-      <div className="flex items-center justify-center relative w-[180px]">
-        <Image src={image} alt="girl_doc" fill />
+      <div className="flex items-center justify-center">
+        <Image src={image} alt="girl_doc" width={140} />
       </div>
     </div>
   );
@@ -71,12 +71,12 @@ const cards = [
 
 const Second = () => {
   return (
-    <section className="p-4 h-full bg-white text-primary_blue md:p-0 md:w-[80%] mx-auto md:pt-8">
+    <section className="p-4 h-full bg-white text-primary_blue md:p-0 md:w-[80%] mx-auto md:mt-20 mt-14">
       <h2 className="font-extrabold  text-2xl mb-16 text-center md:text-start">
         Medical Services
       </h2>
 
-      <div className="grid gap-2 grid-cols-2 md:gap-4 md:grid-cols-6 mb-12">
+      <div className="grid-container gap-2 grid-cols-2 md:gap-4 md:grid-cols-6 mb-12">
         {cards.map((card) => (
           <Card
             key={card.id}
