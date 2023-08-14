@@ -13,18 +13,17 @@ const Footer = () => {
             <br /> grow, and get hired.
           </p>
         </div>
-
         {/* second */}
         <div className="flex gap-2 flex-col text-secondary_blue ">
           <section className="flex gap-2 items-center md:justify-end">
             <div className="px-6 py-4 bg-[#F0F3FF] rounded-[32px] flex items-center justify-center ">
               <span className="text-[16px] font-semibold px-2 leading-6">
-                +994 55 979 90 34
+                +994 55 753 73 73
               </span>
             </div>
             <div className="px-6 py-4 bg-[#F0F3FF] rounded-[32px] flex items-center justify-center ">
               <span className="text-[16px] font-semibold px-2 leading-6">
-                *7700
+                *7373
               </span>
             </div>
           </section>
