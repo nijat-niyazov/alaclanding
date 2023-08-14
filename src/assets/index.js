@@ -18,8 +18,21 @@ import menu from "./menu.svg";
 import partner from "./partner.png";
 import reng from "./reng.png";
 import youtube from "./youtube.svg";
-
+import clinic1 from "./clinic1.svg";
+import clinic2 from "./clinic2.svg";
+import clinic3 from "./clinic3.svg";
+import clinic4 from "./clinic4.svg";
+import partner from "./partner.png";
+import iphone2 from "./iphone2.png";
+import android from "./android.svg";
+import apple from "./apple.svg";
+import qr from './qr.svg'
 export {
+  qr,
+  apple,
+  android,
+  iphone2,
+  partner,
   arrowd,
   cat,
   clinic1,

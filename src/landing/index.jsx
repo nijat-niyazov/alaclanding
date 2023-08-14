@@ -3,8 +3,7 @@ import Footer from "./Footer";
 
 const Landing = () => {
   return (
-    <div className="h-full bg-white">
-      <First />
+    <div className="h-screen bg-white flex flex-col gap-8">
       <Second />
       <Third />
       <Fourth />
