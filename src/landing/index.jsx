@@ -1,11 +1,14 @@
 import Footer from "./Footer";
-import { First } from "./sections";
+import { First, Second, Fifth, Fourth, Third } from "@/landing/sections";
 
 const Landing = () => {
   return (
-    <div className="flex flex-col gap-14">
+    <div className="h-screen">
       <First />
-      {/* <Second /> */}
+      <Second />
+      <Third />
+      <Fourth />
+      <Fifth />
       <Footer />
     </div>
   );
