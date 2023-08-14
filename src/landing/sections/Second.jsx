@@ -2,27 +2,39 @@ import { cat, girld, guyd, hand, reng } from "@/assets";
 import CustomButton from "@/components/custom";
 import Image from "next/image";
 
-function Card({ heading, text, image, bg, mobCols = 1, desCols = 2 }) {
+function Card({ heading, text, image, bg, fromBottom = 0, id }) {
   return (
     <div
       style={{
         backgroundColor: bg,
-        gridColumn: `span ${desCols}`,
-
-        "@media (max-width: 600px)": {
-          gridColumn: `span ${mobCols}`,
-        },
       }}
-      className="rounded-[40px] md:rounded-[200px] md:pl-[72px]  overflow-hidden relative flex flex-col md:flex-row gap-4 items-center justify-between"
+      className="grid-item h-[272px] md:h-auto rounded-[40px] md:rounded-[200px] md:pl-[72px]  overflow-hidden relative flex flex-col md:flex-row gap-4 items-center justify-between"
     >
-      <div className="p-6 pb-2 md:px-0 md:py-12 ">
-        <h3 className="mb-2 font-bold text-xl md:text-2xl">{heading}</h3>
-        <p className="text-[14px] md:text-[16px]">{text}</p>
+      <div className="p-6 pb-2 md:px-0 md:py-10 md:max-w-[340px] ">
+        <h3 className="mb-2 font-bold text-xl md:text-2xl tracking-[0.36px] ">
+          {heading}
+        </h3>
+        <p className="text-[14px] md:text-[16px] tracking-[0.28px]">{text}</p>
       </div>
 
-      <div className="flex items-center justify-center relative w-[180px]">
-        <Image src={image} alt="girl_doc" fill />
-      </div>
+      <Image
+        className="absolute pl-4 md:p-0 md:hidden"
+        style={{
+          bottom: fromBottom + "px",
+        }}
+        src={image}
+        alt={heading}
+        height={id !== 1 ? 170 : 190}
+        // width={170}
+      />
+
+      <Image
+        className="hidden  md:inline-block"
+        src={image}
+        alt={heading}
+        width={170}
+        // height={192}
+      />
     </div>
   );
 }
@@ -30,7 +42,7 @@ function Card({ heading, text, image, bg, mobCols = 1, desCols = 2 }) {
 const cards = [
   {
     id: 1,
-    mobCols: 2,
+
     desCols: 3,
     heading: "Doctor's appointment",
     text: "Doctors with verified reviews in any area of the city and a quick appointment",
@@ -39,7 +51,6 @@ const cards = [
   },
   {
     id: 2,
-    desCols: 3,
     heading: "Diagnostics",
     text: "MRI, CT, ultrasound, ECG, X-ray",
     bg: "#FBE5FF",
@@ -47,10 +58,10 @@ const cards = [
   },
   {
     id: 3,
-
     heading: "Services",
     text: "Procedures and treatments",
     bg: "#D9F6F2",
+    fromBottom: 40,
     image: hand,
   },
   {
@@ -71,18 +82,21 @@ const cards = [
 
 const Second = () => {
   return (
-    <section className="p-4 h-full bg-white text-primary_blue md:p-0 md:w-[80%] mx-auto md:pt-8">
+    <section
+      id="services"
+      className="p-4 h-full bg-white text-primary_blue md:p-0 md:w-[80%] mx-auto md:mt-20 mt-14"
+    >
       <h2 className="font-extrabold  text-2xl mb-16 text-center md:text-start">
         Medical Services
       </h2>
 
-      <div className="grid gap-2 grid-cols-2 md:gap-4 md:grid-cols-6 mb-12">
+      <div className="grid-container gap-2 grid-cols-2 md:gap-4 md:grid-cols-6 mb-12">
         {cards.map((card) => (
           <Card
             key={card.id}
-            mobCols={card?.mobCols}
-            desCols={card?.desCols}
+            id={card.id}
             bg={card.bg}
+            fromBottom={card.fromBottom}
             heading={card.heading}
             text={card.text}
             image={card.image}

@@ -1,4 +1,3 @@
-import React from "react";
 import { clinic1, clinic2, clinic3, clinic4 } from "@/assets";
 import Image from "next/image";
 function Third() {
@@ -22,7 +21,10 @@ function Third() {
   ];
 
   return (
-    <section className="bgsection3 z-0 py-16 bg-white  max-w-full relative md:flex md:items-center md:justify-center w-full md:h-[750px]">
+    <section
+      id="partnership"
+      className="bgsection3 z-0 py-16 bg-white  max-w-full relative md:flex md:items-center md:justify-center w-full md:h-[750px]"
+    >
       <div className="z-10  bg-transparent px-4 flex justify-center flex-col  items-center gap-8 text-center">
         <p className="text-[24px] font-bold leading-[28.8px] text-[#172D66]">
           Find out more than 20 clinics of Baku with top rated doctors
@@ -58,7 +60,7 @@ function Third() {
             className="w-[64px] h-[64px] rounded-[16px] object-cover"
           />
           <p className="text-base text-[#172D66]">
-            Find out more than 20 clinicsof Baku with top rated doctors
+            Find out more than 20 clinics of Baku with top rated doctors
           </p>
         </div>
       </div>

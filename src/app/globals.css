@@ -3,10 +3,14 @@
 @tailwind utilities;
 
 .bgsection3 {
-    background-image:url("../assets/clinicsbg.png");
-    background-size:cover;
-    background-position: center;
+  background-image: url("../assets/clinicsbg.png");
+  background-size: cover;
+  background-position: center;
+  width: 800px;
+  height: 800px;
+  margin: auto;
 }
+
 .custom-style {
   background-image: url("../assets/bg.png");
   background-size: cover;
@@ -15,9 +19,52 @@
   background: linear-gradient(90deg, rgba(0, 215, 189, 0.16) 0%, rgba(48, 227, 206, 0.16) 0.01%, rgba(104, 170, 255, 0.16) 50.52%, rgba(222, 129, 255, 0.16) 100%); 
 }
 
+.gradient-container {
+  background: var(
+    --primary-gradient,
+    linear-gradient(
+      90deg,
+      #00d7bd 0%,
+      #30e3ce 0.01%,
+      #68aaff 50.52%,
+      #de81ff 100%
+    ),
+    #60e9cc
+  );
+  opacity: 0.25;
+  position: relative;
+}
+
 @media (max-width: 600px) {
   .custom-style {
     background-image: url("../assets/bg_m.png");
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Mobil versiyon için 2 sütun */
+  gap: 20px; /* Aralardaki boşluk */
+}
+.grid-item:nth-child(1) {
+  grid-column: span 2;
+}
+
+@media (min-width: 768px) {
+  /* Masaüstü versiyonunda stil değişiklikleri */
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* Masaüstü versiyon için 3 sütun */
+  }
+
+  /* İlk iki kartı özelleştirme (3'er sütun span) */
+  .grid-item:nth-child(1),
+  .grid-item:nth-child(2) {
+    grid-column: span 3;
+  }
+
+  /* Diğer kartları özelleştirme (2'şer sütun span) */
+  .grid-item:not(:nth-child(1)):not(:nth-child(2)) {
+    grid-column: span 2;
   }
 }
 
