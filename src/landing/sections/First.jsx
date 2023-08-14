@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const First = () => {
   return (
-    <div className="relative w-full custom-style h-full pb-1.5">
+    <div className="relative w-full custom-style h-screen md:h-full  pb-1.5">
       <div className="md:pt-8 z-10 p-4 md:p-0 md:w-[80%]   mx-auto">
         <header className="flex  items-center justify-between ">
           <Image src={logo} alt="logo" width={84} height={32} />
