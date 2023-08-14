@@ -75,7 +75,7 @@ const cards = [
 
 const Second = () => {
   return (
-    <section className="p-4 h-screen bg-white text-primary_blue md:p-0 md:w-[80%] mx-auto md:pt-8">
+    <section className="p-4 h-full bg-white text-primary_blue md:p-0 md:w-[80%] mx-auto md:pt-8">
       <h2 className="font-extrabold  text-2xl mb-16 text-center">
         Medical Services
       </h2>
