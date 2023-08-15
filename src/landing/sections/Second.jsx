@@ -83,7 +83,7 @@ const cards = [
 const Second = () => {
   return (
     <section
-      id="services"
+      name="services"
       className="p-4 h-full bg-white text-primary_blue md:p-0 md:w-[80%] mx-auto md:mt-20 mt-14"
     >
       <h2 className="font-extrabold  text-2xl mb-16 text-center md:text-start">

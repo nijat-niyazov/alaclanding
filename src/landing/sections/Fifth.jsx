@@ -1,7 +1,6 @@
-import Image from "next/image";
-import React from "react";
-import { apple, android, qr } from "@/assets";
+import { android, apple, qr } from "@/assets";
 import CustomButton from "@/components/custom";
+import Image from "next/image";
 
 function Fifth() {
   return (
