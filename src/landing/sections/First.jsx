@@ -18,6 +18,7 @@ const First = () => {
           <ul className="hidden md:flex mr-32 rounded-[48px] py-4 px-10 bg-white gap-10 font-[500] text-[16px] text-primary_blue shadow-custom">
             {links.map((link, i) => (
               <Link
+                className="cursor-pointer"
                 key={i}
                 to={link.toLowerCase()}
                 spy={true}
