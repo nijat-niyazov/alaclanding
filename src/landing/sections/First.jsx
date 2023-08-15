@@ -15,7 +15,7 @@ const First = () => {
 
           <DropDown links={links} />
 
-          <ul className="hidden md:flex mr-32 rounded-[48px] py-4 px-10 bg-white gap-10 font-[500] text-[16px] text-primary_blue shadow-custom">
+          <ul className="hidden md:flex  rounded-[48px] py-4 px-10 bg-white gap-10 font-[500] text-[16px] text-primary_blue shadow-custom">
             {links.map((link, i) => (
               <Link
                 className="cursor-pointer"
@@ -54,16 +54,16 @@ const First = () => {
           </div>
 
           {/* Info */}
-          <div className="md:w-[570px] order-1  md:mt-[130px] mb-6 text-center md:text-start">
-            <p className="text-primary_blue mb-4  font-[500] text-[16px] md:text-2xl  md:mb-8 ">
+          <div className="md:w-[570px] order-1  md:mt-[130px] mb-6 text-center md:text-start text-primary_blue">
+            <p className=" mb-4  font-[500] text-[16px] md:text-2xl  md:mb-8 ">
               Meet älaj
             </p>
 
-            <p className="px-11 leading-10 text-primary_blue  md:text-start  md:p-0 md:pr-6 font-bold mb-6  md:text-5xl text-[32px] md:mb-8 md:font-extrabold">
+            <p className="px-12 leading-10   md:text-start  md:p-0 md:mr-26 font-bold mb-6  md:text-5xl text-[32px] md:mb-8 md:font-extrabold md:mr-40">
               New way to find a doctor or best medical services
             </p>
 
-            <p className="text-primary_blue leading-6 px-12 md:pr-48   md:p-0 md:text-start font-[500] text-[16px] md:text-2xl mb-8 md:mb-10">
+            <p className=" leading-6 px-12 md:pr-48   md:p-0 md:text-start font-[500] text-[16px] md:text-2xl mb-8 md:mb-10">
               Find out more than 20 clinics of Baku with top rated doctors
             </p>
 
