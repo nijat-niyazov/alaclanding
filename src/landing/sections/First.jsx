@@ -79,8 +79,9 @@ const First = () => {
                   >
                     <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-[48px] bg-white p-12 text-center align-middle shadow-xl transition-all">
                       <div className="grid gap-8 text-primary_blue text-lg font-bold ">
-                        {links.map((link) => (
+                        {links.map((link, i) => (
                           <Link
+                            key={i}
                             onClick={closeModal}
                             to={link.toLowerCase()}
                             spy={true}
