@@ -14,7 +14,7 @@ function Fifth() {
         </div>
         <div className="flex flex-col px-4 justify-center md:w-1/3 gap-10">
           <p className="text-[24px] font-bold leading-[28.8px] text-[#172D66] text-center   md:text-[32px]">
-            Download now
+            Availlable soon...
           </p>
           <p className="text-base text-[#172D66] text-center md:px-16">
             Find out more than 20 clinics of Baku with top rated doctors
@@ -23,11 +23,13 @@ function Fifth() {
             icon={apple}
             label={"Download for iOS"}
             variant="primary"
+            disabled={true}
           />
           <CustomButton
             icon={android}
             label={"Download for Android"}
             variant="primary"
+            disabled={true}
           />
         </div>
         <div className="w-1/3 hidden md:flex justify-center items-center flex-col gap-10">

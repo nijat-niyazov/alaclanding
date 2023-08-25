@@ -13,7 +13,6 @@ import girld from "./girld.png";
 import guyd from "./guyd.png";
 import hand from "./hand.png";
 import instagram from "./instagram.svg";
-import iphone2 from "./iphone2.png";
 import logo from "./logo.svg";
 import main from "./main.png";
 import menu from "./menu.svg";
@@ -21,7 +20,7 @@ import partner from "./partner.png";
 import qr from "./qr.svg";
 import reng from "./reng.png";
 import youtube from "./youtube.svg";
-
+import iphone2 from "./iphone2.png";
 export {
   android,
   apple,

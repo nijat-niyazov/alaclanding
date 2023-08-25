@@ -110,7 +110,7 @@ const Second = () => {
           more than 10 000 best doctors
         </p>
 
-        <CustomButton label="Download App" variant="primary" />
+        <CustomButton disabled={true} label="Download App" variant="primary" />
       </div>
     </section>
   );
