@@ -96,7 +96,7 @@ const First = () => {
             <li>Download</li>
           </ul>
           <span className="text-primary_blue font-bold text-lg hidden md:inline-block">
-            *7770
+            *7373
           </span>
         </header>
 
