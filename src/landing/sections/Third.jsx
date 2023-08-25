@@ -37,21 +37,6 @@ function Third() {
                 alt={`clinic+${clinic.id}`}
                 className="w-[64px] h-[64px] rounded-[16px] object-cover"
               />
-              <Image
-                src={clinic.img}
-                alt={`clinic+${clinic.id}`}
-                className="w-[64px] h-[64px] rounded-[16px] object-cover"
-              />
-              <Image
-                src={clinic.img}
-                alt={`clinic+${clinic.id}`}
-                className="w-[64px] h-[64px] rounded-[16px] object-cover"
-              />
-              <Image
-                src={clinic.img}
-                alt={`clinic+${clinic.id}`}
-                className="w-[64px] h-[64px] rounded-[16px]  object-cover"
-              />
             </div>
           ))}
           <Image

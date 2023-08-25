@@ -1,6 +1,7 @@
 import { partner } from "@/assets";
 import CustomButton from "@/components/custom";
 import Image from "next/image";
+import Link from "next/link";
 
 function Fourth() {
   return (
@@ -22,7 +23,9 @@ function Fourth() {
         <p className="text-base text-[#172D66] ">
           Find out more than 20 clinicsof Baku with top rated doctors
         </p>
-        <CustomButton label={"Contact us"} variant="primary" />
+        <Link href="#footer">
+          <CustomButton label={"Contact us"} variant="primary" />
+        </Link>
       </div>
     </section>
   );

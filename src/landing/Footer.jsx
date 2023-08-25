@@ -3,7 +3,10 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="pb-8 px-4 w-full md:pb-20 md:w-[80%] m-auto mt-14">
+    <div
+      id="footer"
+      className="pb-8 px-4 w-full md:pb-20 md:w-[80%] m-auto mt-14"
+    >
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10 md:mb-40">
         {/* first */}
         <div className="mb-10 md:m-0">
@@ -43,9 +46,6 @@ const Footer = () => {
             <div className="px-4 py-4 bg-[#F0F3FF] rounded-[32px] hidden md:flex items-center justify-center ">
               <Image width={16} src={youtube} alt="avatar" />
             </div>
-          </section>
-
-          <section className="flex md:hidden gap-2 items-center">
             <div className="px-4 py-4 bg-[#F0F3FF] rounded-[32px] flex items-center justify-center ">
               <Image width={16} src={youtube} alt="avatar" className="p" />
             </div>

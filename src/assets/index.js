@@ -20,7 +20,7 @@ import partner from "./partner.png";
 import qr from "./qr.svg";
 import reng from "./reng.png";
 import youtube from "./youtube.svg";
-
+import iphone2 from "./iphone2.png";
 export {
   android,
   apple,

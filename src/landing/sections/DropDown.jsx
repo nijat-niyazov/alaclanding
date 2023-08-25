@@ -24,7 +24,6 @@ const DropDown = ({ links }) => {
     };
   }, []);
 
-  console.log(isOpen);
 
   return (
     <>
