@@ -1,3 +1,5 @@
+import android from "./android.svg";
+import apple from "./apple.svg";
 import arrowd from "./arrowd.svg";
 import cat from "./cat.png";
 import clinic1 from "./clinic1.svg";
@@ -14,18 +16,14 @@ import instagram from "./instagram.svg";
 import logo from "./logo.svg";
 import main from "./main.png";
 import menu from "./menu.svg";
+import partner from "./partner.png";
+import qr from "./qr.svg";
 import reng from "./reng.png";
 import youtube from "./youtube.svg";
-import partner from "./partner.png";
-import iphone2 from "./iphone2.png";
-import android from "./android.svg";
-import apple from "./apple.svg";
-import qr from "./qr.svg";
+
 export {
-  qr,
-  apple,
   android,
-  partner,
+  apple,
   arrowd,
   cat,
   clinic1,
@@ -43,6 +41,8 @@ export {
   logo,
   main,
   menu,
+  partner,
+  qr,
   reng,
   youtube,
 };

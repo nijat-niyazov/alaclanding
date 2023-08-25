@@ -30,8 +30,8 @@ function Third() {
           Find out more than 20 clinics of Baku with top rated doctors
         </p>
         <div className="flex flex-wrap justify-center gap-4 w-full h-auto   md:w-[792px]">
-          {clinics.map((clinic) => (
-            <>
+          {clinics.map((clinic, i) => (
+            <div key={i}>
               <Image
                 src={clinic.img}
                 alt={`clinic+${clinic.id}`}
@@ -52,7 +52,7 @@ function Third() {
                 alt={`clinic+${clinic.id}`}
                 className="w-[64px] h-[64px] rounded-[16px]  object-cover"
               />
-            </>
+            </div>
           ))}
           <Image
             src={clinics[0].img}

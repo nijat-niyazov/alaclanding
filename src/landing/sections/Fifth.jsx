@@ -1,13 +1,12 @@
-import Image from "next/image";
-import React from "react";
-import { apple, android, qr } from "@/assets";
+import { android, apple, qr } from "@/assets";
 import CustomButton from "@/components/custom";
+import Image from "next/image";
 
 function Fifth() {
   return (
     <section
       id="download"
-      className="custom-style2 pt-6 pb-[56px] z-0 h-full relative  "
+      className="custom-style2 pt-6 pb-[56px] z-0 h-full relative  mt-14"
     >
       <div className="flex flex-col md:flex-row  md:w-[80%] md:mx-auto justify-between">
         <div className="flex flex-col justify-center md:order-1 mx-auto pl-8 md:pl-0 items-center w-full h-[420px] md:w-[500px] md:h-[560px]">
