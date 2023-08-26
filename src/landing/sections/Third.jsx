@@ -25,29 +25,26 @@ function Third() {
       id="partnership"
       className="bgsection3 z-0 py-16 bg-white  max-w-full relative md:flex md:items-center md:justify-center w-full md:h-[750px]"
     >
-      <div className="z-10  bg-transparent px-4 flex justify-center flex-col  items-center gap-8 text-center">
+      <div className="z-10  h-full bg-transparent px-4 flex justify-between flex-col  items-center gap-8 text-center">
         <p className="text-[24px] font-bold leading-[28.8px] text-[#172D66]">
           Find out more than 20 clinics of Baku with top rated doctors
         </p>
-        <div className="flex flex-wrap justify-center gap-4 w-full h-auto   md:w-[792px]">
+
+        <div className="flex items-center justify-between w-full">
           {clinics.map((clinic, i) => (
-            <div key={i}>
-              <Image
-                src={clinic.img}
-                alt={`clinic+${clinic.id}`}
-                className="w-[64px] h-[64px] rounded-[16px] object-cover"
-              />
-            </div>
+            <Image
+              key={i}
+              src={clinic.img}
+              unoptimized={true}
+              alt={`clinic+${clinic.id}`}
+              className="w-[64px] h-[64px] rounded-[16px] object-cover"
+            />
           ))}
-          <Image
-            src={clinics[0].img}
-            alt={`clinic+${clinics[0].id}`}
-            className="w-[64px] h-[64px] rounded-[16px] object-cover"
-          />
-          <p className="text-base text-[#172D66]">
-            Find out more than 20 clinics of Baku with top rated doctors
-          </p>
         </div>
+
+        <p className="text-base text-[#172D66]">
+          Find out more than 20 clinics of Baku with top rated doctors
+        </p>
       </div>
     </section>
   );
