@@ -4,7 +4,7 @@ import "./globals.css";
 const inter = Nunito({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Alac",
+  title: "Alac app",
 };
 
 export default function RootLayout({ children }) {

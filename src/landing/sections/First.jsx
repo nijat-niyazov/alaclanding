@@ -3,8 +3,8 @@ import { arrowd, close, logo, main, menu } from "@/assets";
 import CustomButton from "@/components/custom";
 import { Dialog, Transition } from "@headlessui/react";
 import Image from "next/image";
+import Link from "next/link";
 import { Fragment, useState } from "react";
-import { Link } from "react-scroll";
 
 const First = () => {
   let [isOpen, setIsOpen] = useState(false);
@@ -54,7 +54,7 @@ const First = () => {
                       <div className="grid gap-8 text-primary_blue text-lg font-bold ">
                         <Link
                           onClick={closeModal}
-                          to="services"
+                          href="#services"
                           spy={true}
                           smooth={true}
                           offset={0}
@@ -64,7 +64,7 @@ const First = () => {
                         </Link>
                         <Link
                           onClick={closeModal}
-                          to="partnership"
+                          href="#partnership"
                           spy={true}
                           smooth={true}
                           offset={0}
@@ -74,7 +74,7 @@ const First = () => {
                         </Link>
                         <Link
                           onClick={closeModal}
-                          to="download"
+                          href="#download"
                           spy={true}
                           smooth={true}
                           offset={50}
@@ -91,9 +91,15 @@ const First = () => {
           </Transition>
 
           <ul className="hidden md:flex mr-32 rounded-[48px] py-4 px-10 bg-white gap-10 font-[500] text-[16px] text-primary_blue shadow-custom">
-            <li>Services</li>
-            <li>Partnership</li>
-            <li>Download</li>
+            <Link href="#services" className="cursor-pointer">
+              <li>Services</li>
+            </Link>
+            <Link href="#partnership" className="cursor-pointer">
+              <li>Partnership</li>
+            </Link>
+            <Link href="#download" className="cursor-pointer">
+              <li>Download</li>
+            </Link>
           </ul>
           <span className="text-primary_blue font-bold text-lg hidden md:inline-block">
             *7373

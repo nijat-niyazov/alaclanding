@@ -1,8 +1,8 @@
 "use client";
 import { close, menu } from "@/assets";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-scroll";
 
 const DropDown = ({ links }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +23,6 @@ const DropDown = ({ links }) => {
       document.removeEventListener("mousedown", handleClickAway);
     };
   }, []);
-
 
   return (
     <>
@@ -46,7 +45,7 @@ const DropDown = ({ links }) => {
               className="cursor-pointer"
               key={i}
               onClick={() => setIsOpen(false)}
-              to={link.toLowerCase()}
+              href={`#` + link.toLowerCase()}
               spy={true}
               smooth={true}
               offset={0}

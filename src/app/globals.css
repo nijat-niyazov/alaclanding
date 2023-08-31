@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth!important;
+}
+
 .bgsection3 {
   background-image: url("../assets/no.png");
   background-size: cover;

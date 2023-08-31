@@ -43,7 +43,7 @@ const Footer = () => {
             <div className="px-4 py-4 bg-[#F0F3FF] rounded-[32px] flex items-center justify-center ">
               <Image width={16} src={instagram} alt="avatar" />
             </div>
-            <div className="px-4 py-4 bg-[#F0F3FF] rounded-[32px] hidden md:flex items-center justify-center ">
+            <div className="px-4 py-4 bg-[#F0F3FF] rounded-[32px] flex  items-center justify-center ">
               <Image width={16} src={youtube} alt="avatar" />
             </div>
           </section>
